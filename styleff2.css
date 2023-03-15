@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+    color: white;
+    line-height:1.5;
+    text-align: center;
+}
+
+.container{
+    max-width: 960px;
+    margin: auto;
+    padding:0;
+}
+
+#showcase{
+    height:300px;
+
+}
+
+#showcase h1{
+    font-size: 50px;
+    line-height: 1.2;
+    position: relative;
+    animation-name:heading;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes heading {
+    0%{ transform: translateY(-50px);}
+    100%{ transform: translateY(200px);}
+}
+
+#content{
+    position:relative;
+    animation-name:content;
+    animation-duration: 3s;
+}
+
+@keyframes content {
+    0% { transform:translateY(-1000px);}
+    100%{ transform: translate(0);}
+}
+.vvv{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: #fff 1px solid;
+    padding: 15px 25px;
+    margin-top: 40px;
+    animation-name: vvv;
+    animation-duration: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 4s;
+}
+
+.vvv:hover{
+    transform: rotateY(180deg);
+}
+
+@keyframes vvv {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
